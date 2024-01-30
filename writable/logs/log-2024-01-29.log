@@ -1,0 +1,1066 @@
+CRITICAL - 2024-01-29 14:33:08 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/Login.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 14:35:20 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/Login.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 14:36:54 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/Login.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:37:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:37:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:38:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:38:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:40:52 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:40:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:41:50 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:41:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:41:51 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:41:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:42:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 14:42:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->process()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+ERROR - 2024-01-29 14:43:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:45:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:46:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:46:47 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:47:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:47:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:47:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:47:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:48:20 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:49:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(24): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:53:10 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:53:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:54:29 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 14:59:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 15:00:49 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 15:03:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 15:03:38 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 15:04:01 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/macbook/...', 184)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('mysql-db', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('mysql-db', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+ERROR - 2024-01-29 15:04:07 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/macbook/...', 184)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('mysql-db', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('mysql-db', 'myuser', Object(SensitiveParameterValue), 'spk_hipertensi_...', 3306, '', 0)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for mysql-db failed: nodename nor servname provided, or not known in /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/app/Controllers/Login.php(25): CodeIgniter\BaseModel->first()
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(941): App\Controllers\Login->process()
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#11 {main}
+CRITICAL - 2024-01-29 15:10:09 --> ErrorException: Undefined property: Config\App::$indexPage
+in SYSTEMPATH/HTTP/SiteURI.php on line 98.
+ 1 SYSTEMPATH/HTTP/SiteURI.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\App::$indexPage', '/Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURI.php', 98)
+ 2 SYSTEMPATH/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'login', null)
+ 3 SYSTEMPATH/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('login')
+ 4 SYSTEMPATH/Config/Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 5 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 6 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 7 SYSTEMPATH/Config/Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 8 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+ 9 SYSTEMPATH/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+10 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+11 SYSTEMPATH/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+12 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+13 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+14 SYSTEMPATH/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+15 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+16 SYSTEMPATH/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+17 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+18 SYSTEMPATH/CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+19 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+20 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:10:09 --> ErrorException: Uncaught ErrorException: Undefined property: Config\App::$indexPage in /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURI.php:98
+Stack trace:
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURI.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/macbook/...', 98)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'login', NULL)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('login')
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#12 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#13 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#14 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#15 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Debug/Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#16 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#17 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: Config\App::$indexPage
+#0 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURI.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/macbook/...', 98)
+#1 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'login', NULL)
+#2 /Users/macbook/Downloads/spk-hipertensi-ci4/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('login')
+#3 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#4 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#5 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#6 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#7 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#8 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#9 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#10 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#11 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#12 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#13 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#14 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#15 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#16 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#17 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#18 /Users/macbook/Downloads/spk-hipertensi-ci4/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#19 /Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#20 /Users/macbook/Downloads/spk-hipertensi-ci4/system/Commands/Server/rewrite.php(47): require_once('/Users/macbook/...')
+#21 {main}
+in SYSTEMPATH/HTTP/SiteURI.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-29 15:16:07 --> TypeError: App\Controllers\Logout::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Logout.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Logout->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:16:51 --> TypeError: App\Controllers\Logout::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Logout.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Logout->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:16:52 --> TypeError: App\Controllers\Logout::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Logout.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Logout->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:20:17 --> Error: Undefined constant "userId"
+in APPPATH/Views/header.php on line 13.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 4 APPPATH/Views/spk.php(22): CodeIgniter\View\View->include('header')
+ 5 SYSTEMPATH/View/View.php(228): include('/Users/macbook/Downloads/spk-hipertensi-ci4/app/Views/spk.php')
+ 6 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('spk', [], true)
+ 8 APPPATH/Controllers/Spk.php(9): view('spk')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Spk->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spk))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:20:20 --> Error: Undefined constant "userId"
+in APPPATH/Views/header.php on line 13.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 4 APPPATH/Views/spk.php(22): CodeIgniter\View\View->include('header')
+ 5 SYSTEMPATH/View/View.php(228): include('/Users/macbook/Downloads/spk-hipertensi-ci4/app/Views/spk.php')
+ 6 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('spk', [], true)
+ 8 APPPATH/Controllers/Spk.php(9): view('spk')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Spk->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spk))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:20:54 --> Error: Undefined constant "userId"
+in APPPATH/Views/header.php on line 13.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 4 APPPATH/Views/spk.php(22): CodeIgniter\View\View->include('header')
+ 5 SYSTEMPATH/View/View.php(228): include('/Users/macbook/Downloads/spk-hipertensi-ci4/app/Views/spk.php')
+ 6 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('spk', [], true)
+ 8 APPPATH/Controllers/Spk.php(9): view('spk')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Spk->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spk))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 15:20:56 --> Error: Undefined constant "userId"
+in APPPATH/Views/header.php on line 13.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(469): CodeIgniter\View\View->render('header', null, true)
+ 4 APPPATH/Views/spk.php(22): CodeIgniter\View\View->include('header')
+ 5 SYSTEMPATH/View/View.php(228): include('/Users/macbook/Downloads/spk-hipertensi-ci4/app/Views/spk.php')
+ 6 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('spk', [], true)
+ 8 APPPATH/Controllers/Spk.php(9): view('spk')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Spk->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spk))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
+CRITICAL - 2024-01-29 22:56:11 --> TypeError: App\Controllers\Logout::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Logout.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Logout->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/macbook/Downloads/spk-hipertensi-ci4/public/index.php')
